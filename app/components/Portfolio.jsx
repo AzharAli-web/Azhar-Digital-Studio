@@ -1,0 +1,133 @@
+import React from 'react'
+import { PiStarFill } from "react-icons/pi";
+import { HiArrowUpRight } from "react-icons/hi2";
+import { motion } from 'framer-motion';
+
+const Portfolio = () => {
+    //projects array..
+    const projects = [
+        {
+            id: 1,
+            title: "Full Stack E-Commerce Website",
+            image: "/assets/portfolio-5.png",
+            tags: ["Next.js", "Mongo.DB"],
+            live:"https://heaventech-store.vercel.app/",
+        },
+        {
+            id: 2,
+            title: "SaaS Landing Page",
+            image: "/assets/portfolio-6.png",
+            tags: ["Next.js", "Framer-motion","TailwindCss"],
+            live:"https://saa-s-landing-page-j1e9.vercel.app/",
+
+        },
+        {
+            id: 3,
+            title: "Portfolio",
+            image: "/assets/portfolio-7.png",
+            tags: ["Next.js", "TailwindCss","Framer-motion"],
+            live:"https://azhar-ali-developer-portfolio.vercel.app/",
+
+        },
+        {
+            id: 4,
+            title: "To-Do app",
+            image: "/assets/portfolio-8.png",
+            tags: ["React.js", "TailwindCss"],
+            live:"https://i-task-pi.vercel.app/",
+
+        },
+    ];
+
+    //Animation Varients;
+    const  container ={
+        hidden:{},
+        show:{
+            transition:{
+                staggerChidren: 0.25,
+            },
+        },
+    };
+    //Card....
+    const card = {
+        hidden:{opacity:0, y:60, rotateX:-10},
+        show:{
+            opacity:1, y:0, rotateX:0, transition:{duration:0.6, ease:"easeOut"}
+        },
+    };
+
+    return (
+        <section className='my-8' id='portfolio'>
+            {/* Headings. */}
+            <motion.div
+            initial={{opacity:0, y:20}}
+            whileInView={{opacity:1, y:0}}
+            transition={{duration:0.6}}
+            viewport={{once:true}}
+            className='text-center'>
+                <p className='text-content font-semibold inline-flex items-center gap-1 border border-outer py-1.5 px-3 rounded-2xl mb-4'>
+                    <PiStarFill className='text-lg' />
+                    Portfolio.
+                </p>
+                <h2 className='text-2xl md:text-3xl lg:text-4xl font-bold text-gradient mb-8'>
+                    Check out my featured <br />projects
+                </h2>
+            </motion.div>
+
+            {/* projects grid.. */}
+            <motion.div
+            varients={container}
+            initail="hidden"
+            whileInView="show"
+            viewport={{once:true, amount:0.2}}
+            className='grid grid-cols-1 md:grid-cols-2 gap-8'>
+                {projects.map((project) => (
+                    <motion.div
+                    varients={card}
+                    whileHover={{scale:1.03, rotateY: 3}}
+                    transition={{type:"spring", stiffness:120, damping: 12}}
+                    key={project.id} className='group relative bg-white/5 backdrop-blur-sm rounded-3xl overflow-hidden border border-white/10 cursor-pointer'>
+                        <motion.div 
+                        whileHover={{scale:1.05}}
+                        transition={{duration: 0.4}}
+                        className='overflow-hidden relative'>
+                            <img src={project.image} alt={project.title} className='w-full h-64 md:h-[450px] object-cover' />
+                            <div className='pointer-events-none absolute inset-0 bg-gradient-to-t from-black-60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300'></div>
+                        </motion.div>
+                            {/* Project-info.. */}
+                            <div
+                            onClick={() => window.open(project.live, "_blank")}
+                            className='absolute bottom-4 left-4 right-4 p-3 md:p-6 rounded-2xl bg-black/20 backdrop-blur-md border-t border-white/10 '>
+                                <motion.div
+                                varients={container}
+                                initial="hidden"
+                                animate="show"
+                                className='flex flex-wrap gap-2 mb-3'>
+                                    {project.tags.map((tagText, index)=>(
+                                        <span key={index} className='px-3 py-1 bg-white/10 text-sm text-white/80 rounded-full border border-white/20'>{tagText}</span>
+                                    ))}
+                                </motion.div>
+                                <div className='flex items-center justify-between'>
+                                    <h3 className='text-xl font-bold text-white transition-colors duration-300'>{project.title}</h3>
+                                    {/* Buttons. */}
+                                    <button
+                                    // onClick={() => project.live && window.open(project.live, "_blank")}
+                                    className='flex items-center justify-center w-10 h-10 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full text-white hover:bg-white/20 transition-colors duration-300 ' ><HiArrowUpRight  className='text-xl'/></button>
+
+
+
+
+                                </div>
+                            </div>
+                            {/* Hver Glow-Effect. */}
+                            <motion.div initial={{opacity:0}} whileHover={{opacity:1}} transition={{duration:0.4}} className='pointer-events-none absolute inset-0 rounded-3xl bg-gradient-to-r from-purple-500/10 to-pink-500/10'>
+                            
+                            </motion.div>
+                    </motion.div>
+                ))}
+            </motion.div>
+        </section>
+    )
+}
+
+export default Portfolio
