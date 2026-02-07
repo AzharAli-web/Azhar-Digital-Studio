@@ -1,36 +1,82 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Azhar Khan Dev — Frontend Developer Portfolio
 
-## Getting Started
+Welcome to the **Azhar Digital Studio** portfolio! 🌐  
+This is the official personal site of **Azhar Ali**, a passionate Frontend Developer specializing in modern web experiences built with the latest technologies.
 
-First, run the development server:
+🔗 **Live Site:** https://azhar-digital-studio.vercel.app/
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+---
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🚀 About
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+This portfolio website showcases my professional experience, development skills, and featured projects. It’s designed with a clean UI, responsive layout, and smooth navigation to highlight my capabilities as a frontend developer.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+I use this platform to:
+- Introduce myself and my journey.
+- Present my skills and tech stack.
+- Display featured frontend projects.
+- Provide contact options for collaboration or job opportunities.
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+## 🧠 Tech Stack
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+The website is built using modern and industry‑standard frontend tools:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- **HTML5**
+- **CSS3**
+- **JavaScript**
+- **React.js**
+- **Next.js**
+- **Tailwind CSS**
+- **Framer Motion**
 
-## Deploy on Vercel
+These tools help deliver responsive, high‑performance, and interactive UI experiences across devices.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 🏆 Features
+
+✔ Clean, professional layout  
+✔ Fully responsive design  
+✔ Portfolio section with featured highlighted projects  
+✔ Downloadable Resume/ CV  
+✔ Contact section with direct messaging options  
+✔ Highlights skills and experiences clearly  
+
+This structure makes the portfolio both **user‑friendly** and **informative** for potential employers and collaborators.:contentReference[oaicite:0]{index=0}
+
+---
+
+## 📁 Sections Overview
+
+### 🏠 Home
+- Brief intro and role (Frontend Developer).
+- Quick call‑to‑action to contact and view work.
+
+### 🖼️ Portfolio
+- Featured projects with images and tech badges.
+- Projects like Full Stack E‑commerce, SaaS Landing Page, To‑Do app, etc.:contentReference[oaicite:1]{index=1}
+
+### 👨‍💻 About
+- Personal description and professional focus.
+- Highlights experience, skills, and passion.
+
+### 📄 Resume
+- Educational background.
+- Certificates and practical skills.
+
+### ✉️ Contact
+- Direct message options.
+- Contact details for professional inquiries.:contentReference[oaicite:2]{index=2}
+
+---
+ ### Install Dependencies
+
+- npm install
+
+
+### Start Development Server
+
+- npm run dev
+
