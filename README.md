@@ -1,82 +1,107 @@
-# Azhar Khan Dev — Frontend Developer Portfolio
+## 💻 Azhar Digital Studio
 
-Welcome to the **Azhar Digital Studio** portfolio! 🌐  
-This is the official personal site of **Azhar Ali**, a passionate Frontend Developer specializing in modern web experiences built with the latest technologies.
+A modern personal portfolio website built with Next.js, React.js, Tailwind CSS, Framer Motion, and Node.js for backend utilities.
+This project showcases a professional portfolio, including skills, projects, resume, and contact form with smooth animations and responsive design.
 
-🔗 **Live Site:** https://azhar-digital-studio.vercel.app/
+🔗 Live Demo: https://azhar-digital-studio.vercel.app
+📂 Repository: https://github.com/AzharAli-web/Azhar-Digital-Studio
 
----
+## 🚀 Features
+### 🖥️ Portfolio Sections
 
-## 🚀 About
+Home: Introduction and professional summary
+About: Education, skills, and personal background
+Projects / Portfolio: Showcase of real-world projects
+Resume: Downloadable resume in PDF format
+Contact: Fully functional contact form for direct messages
 
-This portfolio website showcases my professional experience, development skills, and featured projects. It’s designed with a clean UI, responsive layout, and smooth navigation to highlight my capabilities as a frontend developer.
+### 🎬 Animations (Framer Motion)
 
-I use this platform to:
-- Introduce myself and my journey.
-- Present my skills and tech stack.
-- Display featured frontend projects.
-- Provide contact options for collaboration or job opportunities.
+Smooth page transitions
+Interactive hover effects on buttons and project cards
+Animated skill bars and project highlights
 
----
+### 📱 Responsive Design
 
-## 🧠 Tech Stack
+Mobile-first layout
+Fully responsive for Mobile / Tablet / Desktop
+Modern UI built with Tailwind CSS
 
-The website is built using modern and industry‑standard frontend tools:
+## 🧱 Tech Stack
+### Frontend
+React.js
+Next.js
+Tailwind CSS
+Framer Motion
 
-- **HTML5**
-- **CSS3**
-- **JavaScript**
-- **React.js**
-- **Next.js**
-- **Tailwind CSS**
-- **Framer Motion**
+### Backend / Utilities
 
-These tools help deliver responsive, high‑performance, and interactive UI experiences across devices.
+Node.js (for contact form and server-side utilities)
 
----
+### Deployment
 
-## 🏆 Features
+Vercel
 
-✔ Clean, professional layout  
-✔ Fully responsive design  
-✔ Portfolio section with featured highlighted projects  
-✔ Downloadable Resume/ CV  
-✔ Contact section with direct messaging options  
-✔ Highlights skills and experiences clearly  
+## 📂 Project Structure
+Azhar-Digital-Studio/
+├── app/ or pages/          # Next.js application routes
+├── components/             # Reusable React components
+├── hooks/                  # Custom React hooks
+├── public/                 # Static images & assets
+├── lib/                    # Node.js utilities & helper functions
+├── styles/                 # Tailwind CSS and custom styles
+├── data/                   # Sample data for skills, projects, etc.
+├── screenshots/            # Screenshots for README / portfolio
+├── next.config.js          # Next.js configuration
+├── package.json            # Project dependencies
+├── postcss.config.js       # Tailwind/PostCSS configuration
+├── tailwind.config.js      # Tailwind configuration
+├── tsconfig.json           # TypeScript configuration
+├── .gitignore
+└── README.md
 
-This structure makes the portfolio both **user‑friendly** and **informative** for potential employers and collaborators.:contentReference[oaicite:0]{index=0}
+## 📸 Screenshots
 
----
+Add screenshots of your portfolio website:
+![Admin Category.](./public/assets/fullPage.png)
 
-## 📁 Sections Overview
+## 🧠 What I Learned
 
-### 🏠 Home
-- Brief intro and role (Frontend Developer).
-- Quick call‑to‑action to contact and view work.
+Through this project, I strengthened my understanding of:
+Building full-featured portfolio websites using Next.js and React
+Creating animated UI with Framer Motion
+Managing state and reusable components efficiently
+Implementing responsive design with Tailwind CSS
+Using Node.js for server-side functionality
+Deploying production-ready applications on Vercel
 
-### 🖼️ Portfolio
-- Featured projects with images and tech badges.
-- Projects like Full Stack E‑commerce, SaaS Landing Page, To‑Do app, etc.:contentReference[oaicite:1]{index=1}
+## 🛠️ Installation & Setup
+Clone the repository:
+git clone https://github.com/AzharAli-web/Azhar-Digital-Studio.git
+cd Azhar-Digital-Studio
 
-### 👨‍💻 About
-- Personal description and professional focus.
-- Highlights experience, skills, and passion.
+Install dependencies:
+npm install
 
-### 📄 Resume
-- Educational background.
-- Certificates and practical skills.
+Run the development server:
+npm run dev
 
-### ✉️ Contact
-- Direct message options.
-- Contact details for professional inquiries.:contentReference[oaicite:2]{index=2}
+Open http://localhost:3000
+ to view it in your browser.
 
----
- ### Install Dependencies
+## ⚡ Contact
 
-- npm install
+I’m open to remote jobs, internships, and freelance projects. Let’s connect!
 
+Email: khanma16101@email.com
+Phone: +92 370-5516525
+GitHub: AzharAli-web
+Portfolio: azhar-digital-studio.vercel.app
 
-### Start Development Server
+## 🎯 Features Already Implemented
 
-- npm run dev
-
+Fully responsive portfolio site with smooth UI animations
+Projects section with interactive project cards
+Downloadable resume in PDF format
+Contact form powered by Node.js backend
+Skill section with animated progress bars
